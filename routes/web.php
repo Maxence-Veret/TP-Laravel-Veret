@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/products', [ProductController::class, 'products']);
+Route::get('/product', [ProductController::class, 'product']);
+Route::get('/contact', [ContactController::class, 'contact']);
+Route::get('/category', [ProductController::class, 'category']);
