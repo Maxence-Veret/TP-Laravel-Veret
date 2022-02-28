@@ -2,12 +2,14 @@
 
 @section('content')
 
+{{-- entête sous le menu --}}
 <section class="jumbotron text-center">
     <div class="container">
         <h1 class="jumbotron-heading">Produits</h1>
         <p class="lead text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veniam, eius aliquam quidem rem sunt nam quaerat facilis ex error placeat ipsa illo sed inventore soluta ipsum cumque atque ea?</p>
     </div>
 </section>
+
 
 <div class="container">
     <div class="row">
@@ -63,148 +65,16 @@
                     <li class="list-group-item"><a href="/category">Vestibulum at eros</a></li>
                 </ul>
             </div>
-            <div class="card bg-light mb-3">
+        <div class="card bg-light mb-3">
                 <div class="card-header bg-success text-white text-uppercase">Dernier produit</div>
-                <div class="card-body">
-                    <img class="img-fluid" src="https://dummyimage.com/600x400/55595c/fff" />
-                    <h5 class="card-title mt-3">Produit</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                    <div class="row">
-                        <div class="col">
-                            <p class="btn btn-danger w-100">99,00 &euro;</p>
-                        </div>
-                        <div class="col">
-                            <a href="product.html" class="btn btn-success w-100">Voir</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="/product" title="View Product">Produit</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="btn btn-danger w-100">99,00 &euro;</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success w-100">Ajouter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <nav aria-label="...">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Précédent</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Suivant</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+            @foreach ($products as $product)
+                @include('partials.product-base')
+            @endforeach
 
+                </div>
+        </div>
     </div>
 </div>
 

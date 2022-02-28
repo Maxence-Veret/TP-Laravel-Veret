@@ -20,4 +20,9 @@ class ProductController
     {
         return view('Products.category');
     }
+
+    public function panier()
+    {
+        return view('Products.panier');
+    }
 }
