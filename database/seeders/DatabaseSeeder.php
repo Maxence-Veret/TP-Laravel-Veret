@@ -17,4 +17,5 @@ class DatabaseSeeder extends Seeder
     {
         Product::factory(18)->create();
     }
+
 }

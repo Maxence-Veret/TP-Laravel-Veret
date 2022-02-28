@@ -22,9 +22,9 @@ class ProductFactory extends Factory
             'prix' => rand(1, 200),
             'slug' => $this->faker->sentence(1),
             'image' => $this->faker->imageUrl(),
-            'release_at' => $this->faker->date(),
-            'cdc' =>$this->faker->randomElement('yes', 'no'),
-            'colorist' => $this->faker->randomElement('rouge', 'bleu', 'vert', 'jaune'),
+            'release_at' => $this->faker->date,
+            'cdc' =>$this->faker->randomElement(['yes', 'no']),
+            'colorlist' => $this->faker->randomElement(['rouge', 'bleu', 'vert', 'jaune']),
             'promotion' => rand(1, 50),
         ];
     }

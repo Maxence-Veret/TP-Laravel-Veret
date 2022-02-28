@@ -24,3 +24,4 @@ Route::get('/product', [ProductController::class, 'product']);
 Route::get('/contact', [ContactController::class, 'contact']);
 Route::get('/category', [ProductController::class, 'category']);
 Route::get('/cart', [ProductController::class, 'panier']);
+Route::get('/exem', [ProductController::class, 'exemple']);

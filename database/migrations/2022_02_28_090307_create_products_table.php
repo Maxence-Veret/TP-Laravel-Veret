@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->integer('prix');
             $table->string('slug');
-            $table->timestamp('release_at');
+            $table->timestamp('release_at')->nullable();
             $table->string('cdc');
             $table->string('colorlist');
             $table->string('image');
