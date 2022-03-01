@@ -24,7 +24,7 @@ class ProductFactory extends Factory
             'image' => $this->faker->imageUrl(),
             'release_at' => $this->faker->date,
             'cdc' =>$this->faker->randomElement(['yes', 'no']),
-            'colorlist' => $this->faker->randomElement(['rouge', 'bleu', 'vert', 'jaune']),
+            'colorlist' => $this->faker->randomElement(['rouge', 'bleu', 'vert']),
             'promotion' => rand(1, 50),
         ];
     }

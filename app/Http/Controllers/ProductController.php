@@ -18,7 +18,7 @@ class ProductController
     public function prod()
     {
         return view('index', [
-            'products' => Product::latest('release_at')->simplePaginate(3),
+            'products' => Product::select(['cdc' => 'yes'])->simplePaginate(3),
         ]);
     }
 
