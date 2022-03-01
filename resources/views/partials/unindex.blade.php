@@ -1,4 +1,4 @@
-<div class="col-12 col-md-6 col-lg-4 mb-4">
+<div class="col-sm">
     <a href="/product/{{ $product->id }}">
         <div class="card">
             <img class="card-img-top" src="{{ $product->image }}" alt="Card image cap">

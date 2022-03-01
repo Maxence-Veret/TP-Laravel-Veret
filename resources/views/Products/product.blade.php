@@ -4,8 +4,8 @@
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">Produit</h1>
-        <p class="lead text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro commodi aliquam veniam fuga suscipit itaque labore natus accusamus numquam, perferendis in? Incidunt libero dignissimos unde fuga voluptatem omnis accusamus delectus.</p>
+        <h1 class="jumbotron-heading">{{ $product->nom }}</h1>
+        <p class="lead text-muted mb-0">{{ $product->description }}</p>
     </div>
 </section>
 
@@ -16,7 +16,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                     <li class="breadcrumb-item"><a href="/category">Catégorie</a></li>
-                    <li class="breadcrumb-item active" aria-current="/product">Produit</li>
+                    <li class="breadcrumb-item active" aria-current="/product/{{ $product->id }}">Produit</li>
                 </ol>
             </nav>
         </div>
@@ -42,10 +42,10 @@
             <div class="card bg-light mb-3">
                 <div class="card-body">
                     <p class="price">99,00 &euro;</p>
-                    <p class="price_discounted">149.90 &euro;</p>
+                    <p class="price_discounted">{{ $product->prix }}</p>
                     <form method="get" action="cart.html">
                         <div class="mb-3">
-                            <label for="colors">Couleur</label>
+                            <label for="colors">{{ $product->couleurlist }}</label>
                             <select class="form-select" id="colors">
                                 <option selected>Choisir</option>
                                 <option value="1">Bleu</option>
@@ -107,7 +107,7 @@
                 <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-align-justify"></i> Description</div>
                 <div class="card-body">
                     <p class="card-text">
-                        {{-- {{ $product->description }} --}}
+                        {{ $product->description }}
                     </p>
                     
                 </div>

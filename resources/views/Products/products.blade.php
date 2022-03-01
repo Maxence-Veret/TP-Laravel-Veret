@@ -68,18 +68,15 @@
                 <div class="card bg-light mb-3">
                         <div class="card-header bg-success text-white text-uppercase">Dernier produit</div>
 {{-- fin nav bard gauche --}}
-
-                <div>
-                    @foreach($products as $product)
-                        @include('partials.unite')
-                    @endforeach
-                </div>
-
-                {{ $products->links() }}
-                
         </div>
     </div>
+    @foreach($products as $product)
+        @include('partials.unite')
+    @endforeach
 </div>
+
+<div>{{ $products->links() }}</div>
+
 
 <!-- Footer -->
 <footer class="text-light">
@@ -127,7 +124,7 @@
             </div>
             <div class="col-12 copyright mt-3">
                 <p class="float-left">
-                    <a href="#">Back to top</a>
+                    <button class="btn btn-primary"><a class="text-white text-decoration-none" href="#">Back to top</a></button>
                 </p>
             </div>
         </div>

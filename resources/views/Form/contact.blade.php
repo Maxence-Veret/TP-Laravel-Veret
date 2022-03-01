@@ -112,7 +112,7 @@
             </div>
             <div class="col-12 copyright mt-3">
                 <p class="float-left">
-                    <a href="#">Back to top</a>
+                    <button class="btn btn-primary"><a class="text-white text-decoration-none" href="#">Back to top</a></button>
                 </p>
             </div>
         </div>

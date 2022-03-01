@@ -4,13 +4,41 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use PhpParser\Builder\Function_;
 
 class ProductController
 {
     public function products()
     {
         return view('Products.products', [
-            'movies' => Product::latest('release_at')->paginate(7),
+            'products' => Product::latest('release_at')->simplePaginate(8),
+        ]);
+    }
+
+    public function prod()
+    {
+        return view('index', [
+            'products' => Product::latest('release_at')->simplePaginate(3),
+        ]);
+    }
+
+    public function prodhead()
+    {
+        return view('index', [
+            'products' => Product::latest('release_at')->simplePaginate(1),
+        ]);
+    }
+
+    //         /**
+    //  * Display the specified resource.
+    //  *
+    //  * @param  int  $id
+    //  * @return \Illuminate\Http\Response
+    //  */
+    public function show(Product $product)
+    {
+        return view('Products.product', [
+            'product' => $product,
         ]);
     }
 
