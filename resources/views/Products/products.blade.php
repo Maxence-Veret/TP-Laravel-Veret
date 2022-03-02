@@ -2,8 +2,10 @@
 
 @section('content')
 
+<div class="h-100%">
+
 {{-- entête sous le menu --}}
-<section class="jumbotron text-center">
+<section class="jumbotron text-center bg-light mb-4">
     <div class="container">
         <h1 class="jumbotron-heading">Produits</h1>
         <p class="lead text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veniam, eius aliquam quidem rem sunt nam quaerat facilis ex error placeat ipsa illo sed inventore soluta ipsum cumque atque ea?</p>
@@ -11,25 +13,25 @@
 </section>
 
 {{-- debut nav bar --}}
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                            <li class="breadcrumb-item active" aria-current="/products">Produits</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="/products">Produits</li>
+                </ol>
+            </nav>
         </div>
+    </div>
+</div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="card bg-light mb-3">
-                        <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Filtres</div>
-                        <form action="" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Filtres</div>
+                <form action="" method="post">
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="form-check">
@@ -53,8 +55,8 @@
                                     <button class="btn btn-primary w-100">Filtrer</button>
                                 </li>
                             </ul>
-                        </form>
-                    </div>
+                </form>
+            </div>
                     <div class="card bg-light mb-3">
                         <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Catégories</div>
                         <ul class="list-group category_block">
@@ -68,71 +70,16 @@
                 <div class="card bg-light mb-3">
                         <div class="card-header bg-success text-white text-uppercase">Dernier produit</div>
 {{-- fin nav bard gauche --}}
-        </div>
-    </div>
+                </div>
+            </div>   
     @foreach($products as $product)
         @include('partials.unite')
     @endforeach
-</div>
-
-<div>{{ $products->links() }}</div>
-
-
-<!-- Footer -->
-<footer class="text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-4 col-xl-3">
-                <h5>A propos</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <p class="mb-0">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-                </p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                <h5>Informations</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                <h5>Others links</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3">
-                <h5>Contact</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-home ms-2"></i> My company</li>
-                    <li><i class="fa fa-envelope ms-2"></i> email@example.com</li>
-                    <li><i class="fa fa-phone ms-2"></i> + 33 12 14 15 16</li>
-                    <li><i class="fa fa-print ms-2"></i> + 33 12 14 15 16</li>
-                </ul>
-            </div>
-            <div class="col-12 copyright mt-3">
-                <p class="float-left">
-                    <button class="btn btn-primary"><a class="text-white text-decoration-none" href="#">Back to top</a></button>
-                </p>
-            </div>
+<div class="mb-4">{{ $products->links() }}</div>
         </div>
     </div>
-</footer>
+</div>
 
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 
 @endsection

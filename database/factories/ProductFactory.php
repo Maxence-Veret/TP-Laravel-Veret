@@ -26,6 +26,7 @@ class ProductFactory extends Factory
             'cdc' =>$this->faker->randomElement(['yes', 'no']),
             'colorlist' => $this->faker->randomElement(['rouge', 'bleu', 'vert']),
             'promotion' => rand(1, 50),
+            // 'categorie_id' => rand(1, 5),
         ];
     }
 }

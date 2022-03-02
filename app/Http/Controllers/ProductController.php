@@ -11,22 +11,22 @@ class ProductController
     public function products()
     {
         return view('Products.products', [
-            'products' => Product::latest('release_at')->simplePaginate(8),
+            'products' => Product::simplePaginate(8),
+
         ]);
     }
 
     public function prod()
     {
         return view('index', [
-            'products' => Product::select(['cdc' => 'yes'])->simplePaginate(3),
-        ]);
-    }
+            'products' => Product::latest('release_at')->simplePaginate(3),
 
-    public function prodhead()
-    {
-        return view('index', [
-            'products' => Product::latest('release_at')->simplePaginate(1),
+            'produits' => Product::simplePaginate(1),
+
+            //'produs' => Product::filter('cdc')->simplePaginate(3),
+
         ]);
+
     }
 
     //         /**
@@ -45,11 +45,6 @@ class ProductController
     public function product()
     {
         return view('Products.product');
-    }
-
-    public function category()
-    {
-        return view('Products.category');
     }
 
     public function panier()
